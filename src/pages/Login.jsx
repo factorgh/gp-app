@@ -2,6 +2,7 @@ import loginImage from "../assets/images/login.png";
 import CustomInput from "../components/CustomInput";
 import { MdEmail } from "react-icons/md";
 import { FaLock } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -31,7 +32,10 @@ const Login = () => {
             <MdEmail />{" "}
             <span className="text-sm font-semibold text-slate-700">Email</span>
           </label>
-          <CustomInput placeholder="Please enter your email" />
+          <CustomInput
+            className="border border-slate-400 p-2 rounded-xl w-[400px] "
+            placeholder="Please enter your email"
+          />
           <label className="flex gap-2 mb-1 items-center mt-5" htmlFor="email">
             <FaLock />{" "}
             <span className="text-sm font-semibold text-slate-700">
@@ -41,7 +45,7 @@ const Login = () => {
           <CustomInput
             type="password"
             placeholder="Please enter your password"
-            className="Please enter your password"
+            className="border border-slate-400 p-2 rounded-xl w-[400px] "
           />
         </form>
         {/* Forgot password section */}
@@ -60,9 +64,11 @@ const Login = () => {
         </button>
         <p>
           New on our platform?
-          <span className="text-[#1B9AAA] text-md text-semibold cursor-pointer ml-2">
-            Create an account
-          </span>
+          <Link to={"/signup"}>
+            <span className="text-[#1B9AAA] text-md text-semibold cursor-pointer ml-2">
+              Create an account
+            </span>
+          </Link>
         </p>
       </div>
     </div>
