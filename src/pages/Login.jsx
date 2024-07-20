@@ -55,13 +55,15 @@ const Login = () => {
             <p className="text-slate-500 font-mono">Remember me</p>
           </div>
           {/* Forgot password button */}
-          <p className="cursor-pointer">Forgot password</p>
+          <Link to={"/reset-password"}>Forgot password</Link>
         </div>
 
         {/* login button */}
-        <button className="bg-[#FFC43D] p-2 rounded-md  text-slate-50 w-32 mt-10 mb-5">
-          Login
-        </button>
+        <Link to={"/dashboard"}>
+          <button className="bg-[#06D6A0] mt-10 p-2 rounded-md  text-slate-50 w-32 text-semibold  mb-5">
+            Login
+          </button>
+        </Link>
         <p>
           New on our platform?
           <Link to={"/signup"}>

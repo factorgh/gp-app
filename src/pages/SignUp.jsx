@@ -200,9 +200,11 @@ const SignUp = () => {
           You may receive SMS Notifications from us and can opt out any time.
         </h3>
         {/* login button */}
-        <button className="bg-[#06D6A0] p-2 rounded-md  text-slate-50 w-32  mb-5">
-          SignUp
-        </button>
+        <Link to={"/dashboard"}>
+          <button className="bg-[#06D6A0] p-2 rounded-md  text-slate-50 w-48 text-semibold  mb-5">
+            SignUp
+          </button>
+        </Link>
         <p>
           Already have an account
           <span className="text-[#1B9AAA] text-md text-semibold cursor-pointer ml-2">
