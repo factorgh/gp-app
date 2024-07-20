@@ -3,6 +3,8 @@ import signImage1 from "../assets/images/doc1.png";
 import signImage2 from "../assets/images/doc2.png";
 import signImage3 from "../assets/images/doc3.png";
 import CustomInput from "../components/CustomInput";
+import { FaHospital, FaPersonDress } from "react-icons/fa6";
+import { FaUserDoctor } from "react-icons/fa6";
 
 const SignUp = () => {
   return (
@@ -133,12 +135,72 @@ const SignUp = () => {
               <option>2024</option>
             </select>
           </div>
-          {/* End of selects   for date */}
+          {/* Gender section */}
+          <label className="flex gap-2 mb-1 items-center mt-3" htmlFor="email">
+            <span className="text-sm font-semibold text-slate-700">Gender</span>
+          </label>
+          <div className="flex items-center gap-5">
+            <div className="border border-slate-300 rounded-full w-28 h-10 flex  items-center p-1 gap-2 ">
+              <FaPersonDress />
+              <h3>female</h3>
+              <input type="radio" name="gender" />
+            </div>
+            <div className="border border-slate-300 rounded-full w-28 h-10 flex  items-center p-1 gap-2 ">
+              <FaPersonDress />
+              <h3>male</h3>
+              <input type="radio" name="gender" />
+            </div>
+          </div>
+          {/* End of  gender selection  */}
+          {/* Specilization selection  */}
+          <div className="flex gap-5">
+            <div>
+              <label
+                className="flex gap-2 mb-1 items-center mt-3"
+                htmlFor="email"
+              >
+                <span className="text-sm font-semibold text-slate-700">
+                  Specialization
+                </span>
+              </label>
+              <select className="w-52 border border-slate-300 p-3 rounded-full ">
+                <option className="flex gap-2">
+                  <FaUserDoctor />
+                  <h5> Cardiologist</h5>
+                </option>
+              </select>
+            </div>
+            {/* End of specilization */}
+            {/* hospital section */}
+            <div>
+              <label
+                className="flex gap-2 mb-1 items-center mt-3"
+                htmlFor="email"
+              >
+                <span className="text-sm font-semibold text-slate-700">
+                  Hospital
+                </span>
+              </label>
+              <select className="w-60 border border-slate-300 p-3 rounded-full ">
+                <option className="flex gap-2">
+                  <FaHospital />
+                  <h3>Korle Bu</h3>
+                </option>
+              </select>
+            </div>
+          </div>
         </form>
         {/* Forgot password section */}
-
+        {/* Info section  */}
+        <h3 className="text-[10px] text-gray-300 mt-5">
+          By clicking Sign Up, you agree to our Terms and Privacy Policy.
+        </h3>
+        <h3 className="text-[10px] mb-3 text-gray-300">
+          {" "}
+          You may receive SMS Notifications from us and can opt out any time.
+        </h3>
         {/* login button */}
-        <button className="bg-[#FFC43D] p-2 rounded-md  text-slate-50 w-32 mt-10 mb-5">
+        <button className="bg-[#06D6A0] p-2 rounded-md  text-slate-50 w-32  mb-5">
           SignUp
         </button>
         <p>
