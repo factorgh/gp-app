@@ -4,6 +4,7 @@ import SignUp from "./pages/SignUp";
 import ResetPage from "./pages/ResetPage";
 import BaseTemplate from "./components/BaseTemplate";
 import Dashboard from "./pages/Dashboard";
+import OtpPage from "./pages/OtpPage";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/reset-password" element={<ResetPage />} />
+        <Route path="/otp" element={<OtpPage />} />
         <Route element={<BaseTemplate />}>
           <Route path="/dashboard" element={<Dashboard />} />
         </Route>

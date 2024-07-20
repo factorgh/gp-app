@@ -200,7 +200,7 @@ const SignUp = () => {
           You may receive SMS Notifications from us and can opt out any time.
         </h3>
         {/* login button */}
-        <Link to={"/dashboard"}>
+        <Link to={"/otp"}>
           <button className="bg-[#06D6A0] p-2 rounded-md  text-slate-50 w-48 text-semibold  mb-5">
             SignUp
           </button>

@@ -59,7 +59,7 @@ const Login = () => {
         </div>
 
         {/* login button */}
-        <Link to={"/dashboard"}>
+        <Link to={"/otp"}>
           <button className="bg-[#06D6A0] mt-10 p-2 rounded-md  text-slate-50 w-32 text-semibold  mb-5">
             Login
           </button>
