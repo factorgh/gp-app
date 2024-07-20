@@ -59,7 +59,7 @@ const SignUp = () => {
 
         {/* Form section */}
         <form className="flex flex-col  ">
-          <div className="flex items-center justify-center gap-5">
+          <div className="flex items-center  gap-5">
             {/* First section */}
             <div className="flex flex-col">
               <label className="flex gap-2 mb-1 items-center" htmlFor="email">
@@ -90,7 +90,7 @@ const SignUp = () => {
             className="border border-slate-400 p-2 rounded-xl w-[420px]  "
           />
           {/* password section */}
-          <div className="flex items-center justify-center gap-5 mt-3">
+          <div className="flex items-center  gap-5 mt-3">
             {/* First section */}
             <div className="flex flex-col">
               <label className="flex gap-2 mb-1 items-center" htmlFor="email">
